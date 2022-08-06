@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chaset="EFT-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Drivers Survey</title>
+
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Torogos's  Trucking Survey</h1>
+            <p id="description">Thank you for taking the time to help us improve Drivers Experience</p>
+        </header>  
+            <!--DRIVES INFORMATION #1-->
+    <div class="container">
+            <form  id="survey-form">
+                <fieldset>
+                    
+                        <legend id="driver-info">DRIVER  INFORMATION: </legend>
+                            
+
+                                <label id="name-label">NAME :
+                                    <input type="text" name="name-label" placeholder="Enter your name"  id="name"required>
+                                </label><BR>
+                                <label id="email-label">EMAIL:
+                                    <input type="email" name="email-label" placeholder="Enter your Email"  id="email"required>
+                                </label><BR>
+                                <label id="number-label"> AGE:(optional)
+                                    <input type="number" name="number" placeholder="AGE" id="number" min="23" max="100"> 
+                                </label><BR>
+                                <label for="driver-role">Which option best describes your current role?</label><br>
+                                    <select name="dropdown">
+                                        <option>Select your current Role</option>
+                                        <option>Management</option>
+                                        <option>CompanyDrive</option>
+                                    </select>   
+                               
+                </fieldset> 
+        
+            <!--COMPANY FEEDBACK #2-->
+               
+            <fieldset>
+                
+                <legend>FEEDBACK:</legend>
+                    
+                    <label>Would you recommend Torogos Trucking to a friend?</label><br>
+                       
+                        <label value="recomend">
+                          <input type="radio" value="recommend" name="recomend"> Definitely  
+                        </label> 
+                       
+                       <label value="recomend">
+                            <input type="radio" value="recommend" name="recomend"> Maybe
+                        </label> 
+                        
+                        <label value="recomend">
+                            <input type="radio" value="recommend" name="recomend"> Not Sure
+                        </label><br>
+
+                    <label>What is your favorite feature of Torogos Trucking?</label><br>
+                        <select class="dropdown">
+                                 <option>Select an option</option>
+                                <option>You have an assing truck</option>
+                                <option>Home Every day</option>
+                                <option>Weedkens-OFF</option>
+                        </select>
+                        
+            </fieldset> 
+        </section>   
+                    
+           
+
+            <!--COMMENTS & imprivements #3-->
+            <fieldset>
+                <legend>Improvements</legend>
+                <p>What would you like to see improved? (Check all that apply)</p>
+                   
+                    
+                    <input type="checkbox" name="improvements" value="better-pay">
+                        <label>Better pay</label>
+                    <input type="checkbox" name="improvements" value="newer-equiment"> 
+                        <label>Newer equiment</label>
+                    <input type="checkbox" name="improvements" value="no-camera">
+                        <label>No Dash Camera</label>
+                   
+
+
+                <label>Any comments or suggestions?</label><br>
+                     <textarea rows="10" cols="40" placeholder="enter your comments or suggestions"></textarea>
+
+            </fieldset>
+            <input type="submit" value="Submit"  id="submit"/>
+        </form> 
+    </div>
+            
+        
+    </body>
+</html>
